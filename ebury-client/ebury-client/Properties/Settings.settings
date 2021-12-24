@@ -1,0 +1,26 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="ebury_client.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="BD_SERVER" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">eburyrequisitos.cobadwnzalab.eu-central-1.rds.amazonaws.com</Value>
+    </Setting>
+    <Setting Name="BD_NAME" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">grupo03DB</Value>
+    </Setting>
+    <Setting Name="BD_USER" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">grupo03</Value>
+    </Setting>
+    <Setting Name="BD_PASSWORD" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">2zzd92Xe7sr4BRxW</Value>
+    </Setting>
+    <Setting Name="grupo03DBConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;server=eburyrequisitos.cobadwnzalab.eu-central-1.rds.amazonaws.com;user id=grupo03;password=2zzd92Xe7sr4BRxW;database=grupo03DB;persistsecurityinfo=True&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;MySql.Data.MySqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">server=eburyrequisitos.cobadwnzalab.eu-central-1.rds.amazonaws.com;user id=grupo03;password=2zzd92Xe7sr4BRxW;database=grupo03DB;persistsecurityinfo=True</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
