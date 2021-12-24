@@ -28,14 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.labelUsername = new System.Windows.Forms.Label();
             this.labelPassword = new System.Windows.Forms.Label();
             this.tUsername = new System.Windows.Forms.TextBox();
             this.tPassword = new System.Windows.Forms.TextBox();
             this.bLogin = new System.Windows.Forms.Button();
             this.panelRight = new System.Windows.Forms.Panel();
-            this.lBienvenido = new System.Windows.Forms.Label();
             this.panelLeft = new System.Windows.Forms.Panel();
             this.bHolanda = new System.Windows.Forms.Button();
             this.bAlemania = new System.Windows.Forms.Button();
@@ -51,18 +50,19 @@
             this.label3 = new System.Windows.Forms.Label();
             this.lRegistro = new System.Windows.Forms.Label();
             this.lLRegistro = new System.Windows.Forms.LinkLabel();
+            this.lLEditProfile = new System.Windows.Forms.LinkLabel();
+            this.pictureDefault = new System.Windows.Forms.PictureBox();
             this.pictureRight = new System.Windows.Forms.PictureBox();
             this.pictureLeft = new System.Windows.Forms.PictureBox();
-            this.pictureDefault = new System.Windows.Forms.PictureBox();
             this.panelRight.SuspendLayout();
             this.panelLeft.SuspendLayout();
             this.panelHome1.SuspendLayout();
             this.panelHome2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.panelHome3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureDefault)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureRight)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureLeft)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureDefault)).BeginInit();
             this.SuspendLayout();
             // 
             // labelUsername
@@ -135,25 +135,14 @@
             this.panelRight.Size = new System.Drawing.Size(380, 496);
             this.panelRight.TabIndex = 7;
             // 
-            // lBienvenido
-            // 
-            this.lBienvenido.AutoSize = true;
-            this.lBienvenido.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lBienvenido.Location = new System.Drawing.Point(12, 9);
-            this.lBienvenido.Name = "lBienvenido";
-            this.lBienvenido.Size = new System.Drawing.Size(114, 25);
-            this.lBienvenido.TabIndex = 9;
-            this.lBienvenido.Text = "Bienvenido,";
-            this.lBienvenido.Visible = false;
-            // 
             // panelLeft
             // 
             this.panelLeft.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.panelLeft.Controls.Add(this.lLEditProfile);
             this.panelLeft.Controls.Add(this.bHolanda);
             this.panelLeft.Controls.Add(this.bAlemania);
             this.panelLeft.Controls.Add(this.bHome);
             this.panelLeft.Controls.Add(this.pictureDefault);
-            this.panelLeft.Controls.Add(this.lBienvenido);
             this.panelLeft.Location = new System.Drawing.Point(0, 0);
             this.panelLeft.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelLeft.Name = "panelLeft";
@@ -259,14 +248,14 @@
             this.dataGridView.AllowUserToAddRows = false;
             this.dataGridView.AllowUserToDeleteRows = false;
             this.dataGridView.AllowUserToResizeColumns = false;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.HotTrack;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.HotTrack;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView.Location = new System.Drawing.Point(23, 62);
             this.dataGridView.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -328,6 +317,29 @@
             this.lLRegistro.Text = "Regístrate";
             this.lLRegistro.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lLRegistro_LinkClicked);
             // 
+            // lLEditProfile
+            // 
+            this.lLEditProfile.AutoSize = true;
+            this.lLEditProfile.Location = new System.Drawing.Point(91, 142);
+            this.lLEditProfile.Name = "lLEditProfile";
+            this.lLEditProfile.Size = new System.Drawing.Size(98, 17);
+            this.lLEditProfile.TabIndex = 14;
+            this.lLEditProfile.TabStop = true;
+            this.lLEditProfile.Text = "Editar mi perfil";
+            this.lLEditProfile.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lLEditProfile_LinkClicked);
+            // 
+            // pictureDefault
+            // 
+            this.pictureDefault.Image = global::ebury_client.Properties.Resources.Default;
+            this.pictureDefault.Location = new System.Drawing.Point(94, 24);
+            this.pictureDefault.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureDefault.Name = "pictureDefault";
+            this.pictureDefault.Size = new System.Drawing.Size(100, 100);
+            this.pictureDefault.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureDefault.TabIndex = 10;
+            this.pictureDefault.TabStop = false;
+            this.pictureDefault.Visible = false;
+            // 
             // pictureRight
             // 
             this.pictureRight.Image = global::ebury_client.Properties.Resources.EburyLogo;
@@ -350,30 +362,18 @@
             this.pictureLeft.TabIndex = 8;
             this.pictureLeft.TabStop = false;
             // 
-            // pictureDefault
-            // 
-            this.pictureDefault.Image = global::ebury_client.Properties.Resources.Default;
-            this.pictureDefault.Location = new System.Drawing.Point(93, 71);
-            this.pictureDefault.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureDefault.Name = "pictureDefault";
-            this.pictureDefault.Size = new System.Drawing.Size(100, 100);
-            this.pictureDefault.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureDefault.TabIndex = 10;
-            this.pictureDefault.TabStop = false;
-            this.pictureDefault.Visible = false;
-            // 
             // Index
             // 
             this.AcceptButton = this.bLogin;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(832, 476);
-            this.Controls.Add(this.panelRight);
-            this.Controls.Add(this.pictureLeft);
             this.Controls.Add(this.panelHome2);
             this.Controls.Add(this.panelHome3);
             this.Controls.Add(this.panelHome1);
             this.Controls.Add(this.panelLeft);
+            this.Controls.Add(this.panelRight);
+            this.Controls.Add(this.pictureLeft);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(850, 523);
@@ -392,9 +392,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
             this.panelHome3.ResumeLayout(false);
             this.panelHome3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureDefault)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureRight)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureLeft)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureDefault)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -409,7 +409,6 @@
         private System.Windows.Forms.Button bLogin;
         private System.Windows.Forms.Panel panelRight;
         private System.Windows.Forms.PictureBox pictureLeft;
-        private System.Windows.Forms.Label lBienvenido;
         private System.Windows.Forms.Panel panelLeft;
         private System.Windows.Forms.PictureBox pictureDefault;
         private System.Windows.Forms.Button bHolanda;
@@ -426,6 +425,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.LinkLabel lLRegistro;
         private System.Windows.Forms.Label lRegistro;
+        private System.Windows.Forms.LinkLabel lLEditProfile;
     }
 }
 

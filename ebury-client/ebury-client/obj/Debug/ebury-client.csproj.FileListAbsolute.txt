@@ -31,3 +31,4 @@ D:\Documentos\GitHub\ebury-client-app\ebury-client\ebury-client\obj\Debug\ebury-
 D:\Documentos\GitHub\ebury-client-app\ebury-client\ebury-client\obj\Debug\ebury-client.exe.manifest
 D:\Documentos\GitHub\ebury-client-app\ebury-client\ebury-client\obj\Debug\ebury-client.application
 D:\Documentos\GitHub\ebury-client-app\ebury-client\ebury-client\obj\Debug\ebury_client.Register.resources
+D:\Documentos\GitHub\ebury-client-app\ebury-client\ebury-client\obj\Debug\ebury_client.EditUser.resources

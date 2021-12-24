@@ -40,8 +40,6 @@ namespace ebury_client
         private void connected()
         {
             //Muestro
-            lBienvenido.Visible = true;
-            lBienvenido.Text = "Bienvenido, " + user.userName;
             bAlemania.Visible = true;
             bHolanda.Visible = true;
             pictureDefault.Visible = true;
@@ -70,7 +68,6 @@ namespace ebury_client
         private void disconnected()
         {
             //Oculto
-            lBienvenido.Visible = false;
             bAlemania.Visible = false;
             bHolanda.Visible = false;
             pictureDefault.Visible = false;
@@ -216,6 +213,14 @@ namespace ebury_client
             Register RE = new Register();
             this.Visible = false;
             RE.ShowDialog();
+            this.Visible = true;
+        }
+
+        private void lLEditProfile_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            EditUser EU = new EditUser(user);
+            this.Visible = false;
+            EU.ShowDialog();
             this.Visible = true;
         }
 
