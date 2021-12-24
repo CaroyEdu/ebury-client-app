@@ -47,14 +47,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ebury-client.exe" size="285696">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ebury-client.exe" size="297984">
       <assemblyIdentity name="ebury-client" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>aotaSwy53yCNz1FzVEwI0N3jEiUtM+2O6FntC2b3wac=</dsig:DigestValue>
+        <dsig:DigestValue>fmVuh/psjuAfseaB4UwYrMKMS2N4praFEDOCzgDhItM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
