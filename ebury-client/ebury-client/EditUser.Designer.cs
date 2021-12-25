@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panelLeft = new System.Windows.Forms.Panel();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.bHolanda = new System.Windows.Forms.Button();
@@ -37,7 +38,7 @@
             this.panelParticular = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tNContrasena = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.lNIF = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -59,6 +60,8 @@
             this.tNumero = new System.Windows.Forms.TextBox();
             this.tCalle = new System.Windows.Forms.TextBox();
             this.tCodigoPostal = new System.Windows.Forms.TextBox();
+            this.lResult = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panelLeft.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureDefault)).BeginInit();
             this.panelParticular.SuspendLayout();
@@ -83,7 +86,7 @@
             this.linkLabel1.AutoSize = true;
             this.linkLabel1.Location = new System.Drawing.Point(91, 142);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(98, 17);
+            this.linkLabel1.Size = new System.Drawing.Size(72, 13);
             this.linkLabel1.TabIndex = 14;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Editar mi perfil";
@@ -97,6 +100,7 @@
             this.bHolanda.TabIndex = 13;
             this.bHolanda.Text = "Informe Holanda";
             this.bHolanda.UseVisualStyleBackColor = true;
+            this.bHolanda.Click += new System.EventHandler(this.bHolanda_Click);
             // 
             // bAlemania
             // 
@@ -107,6 +111,7 @@
             this.bAlemania.TabIndex = 12;
             this.bAlemania.Text = "Informe Alemania";
             this.bAlemania.UseVisualStyleBackColor = true;
+            this.bAlemania.Click += new System.EventHandler(this.bAlemania_Click);
             // 
             // bHome
             // 
@@ -117,6 +122,7 @@
             this.bHome.TabIndex = 11;
             this.bHome.Text = "Home";
             this.bHome.UseVisualStyleBackColor = true;
+            this.bHome.Click += new System.EventHandler(this.bHome_Click);
             // 
             // pictureDefault
             // 
@@ -131,9 +137,10 @@
             // 
             // panelParticular
             // 
+            this.panelParticular.Controls.Add(this.lResult);
             this.panelParticular.Controls.Add(this.button2);
             this.panelParticular.Controls.Add(this.button1);
-            this.panelParticular.Controls.Add(this.textBox1);
+            this.panelParticular.Controls.Add(this.tNContrasena);
             this.panelParticular.Controls.Add(this.label13);
             this.panelParticular.Controls.Add(this.lNIF);
             this.panelParticular.Controls.Add(this.label1);
@@ -168,6 +175,7 @@
             this.button2.TabIndex = 28;
             this.button2.Text = "Modificar Información";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -177,14 +185,15 @@
             this.button1.TabIndex = 27;
             this.button1.Text = "Modificar Contraseña";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // textBox1
+            // tNContrasena
             // 
-            this.textBox1.Location = new System.Drawing.Point(156, 390);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.PasswordChar = '*';
-            this.textBox1.Size = new System.Drawing.Size(370, 22);
-            this.textBox1.TabIndex = 26;
+            this.tNContrasena.Location = new System.Drawing.Point(156, 390);
+            this.tNContrasena.Name = "tNContrasena";
+            this.tNContrasena.PasswordChar = '*';
+            this.tNContrasena.Size = new System.Drawing.Size(370, 20);
+            this.tNContrasena.TabIndex = 26;
             // 
             // label13
             // 
@@ -192,7 +201,7 @@
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.Location = new System.Drawing.Point(3, 390);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(147, 20);
+            this.label13.Size = new System.Drawing.Size(126, 17);
             this.label13.TabIndex = 25;
             this.label13.Text = "Nueva Contraseña";
             // 
@@ -201,7 +210,7 @@
             this.lNIF.AutoSize = true;
             this.lNIF.Location = new System.Drawing.Point(44, 45);
             this.lNIF.Name = "lNIF";
-            this.lNIF.Size = new System.Drawing.Size(54, 17);
+            this.lNIF.Size = new System.Drawing.Size(41, 13);
             this.lNIF.TabIndex = 23;
             this.lNIF.Text = "label13";
             // 
@@ -211,7 +220,7 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(3, 332);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(181, 20);
+            this.label1.Size = new System.Drawing.Size(155, 17);
             this.label1.TabIndex = 21;
             this.label1.Text = "Cambiar Contraseña";
             // 
@@ -219,7 +228,7 @@
             // 
             this.tCiudad.Location = new System.Drawing.Point(322, 172);
             this.tCiudad.Name = "tCiudad";
-            this.tCiudad.Size = new System.Drawing.Size(204, 22);
+            this.tCiudad.Size = new System.Drawing.Size(204, 20);
             this.tCiudad.TabIndex = 17;
             // 
             // monthCalendar
@@ -234,14 +243,14 @@
             // 
             this.tApellidos.Location = new System.Drawing.Point(322, 139);
             this.tApellidos.Name = "tApellidos";
-            this.tApellidos.Size = new System.Drawing.Size(204, 22);
+            this.tApellidos.Size = new System.Drawing.Size(204, 20);
             this.tApellidos.TabIndex = 15;
             // 
             // tNombre
             // 
             this.tNombre.Location = new System.Drawing.Point(322, 107);
             this.tNombre.Name = "tNombre";
-            this.tNombre.Size = new System.Drawing.Size(204, 22);
+            this.tNombre.Size = new System.Drawing.Size(204, 20);
             this.tNombre.TabIndex = 14;
             // 
             // label12
@@ -250,7 +259,7 @@
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.Location = new System.Drawing.Point(3, 9);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(187, 20);
+            this.label12.Size = new System.Drawing.Size(161, 17);
             this.label12.TabIndex = 12;
             this.label12.Text = "Información Personal";
             // 
@@ -259,7 +268,7 @@
             this.tContrasena.Location = new System.Drawing.Point(156, 362);
             this.tContrasena.Name = "tContrasena";
             this.tContrasena.PasswordChar = '*';
-            this.tContrasena.Size = new System.Drawing.Size(370, 22);
+            this.tContrasena.Size = new System.Drawing.Size(370, 20);
             this.tContrasena.TabIndex = 11;
             // 
             // label11
@@ -268,7 +277,7 @@
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.Location = new System.Drawing.Point(3, 42);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(35, 20);
+            this.label11.Size = new System.Drawing.Size(29, 17);
             this.label11.TabIndex = 9;
             this.label11.Text = "NIF";
             // 
@@ -278,7 +287,7 @@
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(239, 272);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(113, 20);
+            this.label10.Size = new System.Drawing.Size(95, 17);
             this.label10.TabIndex = 8;
             this.label10.Text = "Código Postal";
             // 
@@ -288,7 +297,7 @@
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(239, 238);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(68, 20);
+            this.label9.Size = new System.Drawing.Size(58, 17);
             this.label9.TabIndex = 7;
             this.label9.Text = "Número";
             // 
@@ -298,7 +307,7 @@
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(239, 204);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(47, 20);
+            this.label8.Size = new System.Drawing.Size(39, 17);
             this.label8.TabIndex = 6;
             this.label8.Text = "Calle";
             // 
@@ -308,7 +317,7 @@
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(239, 172);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(61, 20);
+            this.label7.Size = new System.Drawing.Size(52, 17);
             this.label7.TabIndex = 5;
             this.label7.Text = "Ciudad";
             // 
@@ -318,7 +327,7 @@
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(3, 78);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(167, 20);
+            this.label5.Size = new System.Drawing.Size(141, 17);
             this.label5.TabIndex = 3;
             this.label5.Text = "Fecha de Nacimiento";
             // 
@@ -328,7 +337,7 @@
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(239, 139);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(77, 20);
+            this.label4.Size = new System.Drawing.Size(65, 17);
             this.label4.TabIndex = 3;
             this.label4.Text = "Apellidos";
             // 
@@ -338,7 +347,7 @@
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(3, 362);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(147, 20);
+            this.label3.Size = new System.Drawing.Size(124, 17);
             this.label3.TabIndex = 2;
             this.label3.Text = "Contraseña Actual";
             // 
@@ -348,7 +357,7 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(239, 107);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(68, 20);
+            this.label2.Size = new System.Drawing.Size(58, 17);
             this.label2.TabIndex = 1;
             this.label2.Text = "Nombre";
             // 
@@ -356,28 +365,43 @@
             // 
             this.tNumero.Location = new System.Drawing.Point(322, 236);
             this.tNumero.Name = "tNumero";
-            this.tNumero.Size = new System.Drawing.Size(204, 22);
+            this.tNumero.Size = new System.Drawing.Size(204, 20);
             this.tNumero.TabIndex = 19;
             // 
             // tCalle
             // 
             this.tCalle.Location = new System.Drawing.Point(322, 204);
             this.tCalle.Name = "tCalle";
-            this.tCalle.Size = new System.Drawing.Size(204, 22);
+            this.tCalle.Size = new System.Drawing.Size(204, 20);
             this.tCalle.TabIndex = 18;
             // 
             // tCodigoPostal
             // 
             this.tCodigoPostal.Location = new System.Drawing.Point(365, 272);
             this.tCodigoPostal.Name = "tCodigoPostal";
-            this.tCodigoPostal.Size = new System.Drawing.Size(161, 22);
+            this.tCodigoPostal.Size = new System.Drawing.Size(161, 20);
             this.tCodigoPostal.TabIndex = 20;
+            // 
+            // lResult
+            // 
+            this.lResult.AutoSize = true;
+            this.lResult.Location = new System.Drawing.Point(44, 439);
+            this.lResult.Name = "lResult";
+            this.lResult.Size = new System.Drawing.Size(35, 13);
+            this.lResult.TabIndex = 29;
+            this.lResult.Text = "label6";
+            this.lResult.Visible = false;
+            // 
+            // timer1
+            // 
+            this.timer1.Interval = 3000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // EditUser
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(832, 476);
+            this.ClientSize = new System.Drawing.Size(834, 484);
             this.Controls.Add(this.panelParticular);
             this.Controls.Add(this.panelLeft);
             this.MaximumSize = new System.Drawing.Size(850, 523);
@@ -406,7 +430,7 @@
         private System.Windows.Forms.Panel panelParticular;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tNContrasena;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label lNIF;
         private System.Windows.Forms.Label label1;
@@ -428,5 +452,7 @@
         private System.Windows.Forms.TextBox tNumero;
         private System.Windows.Forms.TextBox tCalle;
         private System.Windows.Forms.TextBox tCodigoPostal;
+        private System.Windows.Forms.Label lResult;
+        private System.Windows.Forms.Timer timer1;
     }
 }

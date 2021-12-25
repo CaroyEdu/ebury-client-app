@@ -51,6 +51,7 @@ namespace ebury_client
                     startYear = r.GetString(2);
                     endYear = (r.IsDBNull(3)) ? "noExistente" : r.GetString(3);
                     nif = r.GetString(4);
+                    Console.WriteLine(nif);
                     
                 }
                 if (!found)
@@ -79,6 +80,10 @@ namespace ebury_client
         public string Nif
         {
             get { return nif; }
+        }
+        public string Pass
+        {
+            get { return password;  }
         }
 
     }

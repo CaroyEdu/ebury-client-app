@@ -32,3 +32,21 @@ D:\Documentos\GitHub\ebury-client-app\ebury-client\ebury-client\obj\Debug\ebury-
 D:\Documentos\GitHub\ebury-client-app\ebury-client\ebury-client\obj\Debug\ebury-client.application
 D:\Documentos\GitHub\ebury-client-app\ebury-client\ebury-client\obj\Debug\ebury_client.Register.resources
 D:\Documentos\GitHub\ebury-client-app\ebury-client\ebury-client\obj\Debug\ebury_client.EditUser.resources
+Z:\Trabajo de Ebury-Segunda Iteracion\ebury-client-app\ebury-client\ebury-client\bin\Debug\ebury-client.exe.config
+Z:\Trabajo de Ebury-Segunda Iteracion\ebury-client-app\ebury-client\ebury-client\obj\Debug\ebury-client.exe
+Z:\Trabajo de Ebury-Segunda Iteracion\ebury-client-app\ebury-client\ebury-client\obj\Debug\ebury-client.pdb
+Z:\Trabajo de Ebury-Segunda Iteracion\ebury-client-app\ebury-client\ebury-client\bin\Debug\ebury-client.exe.manifest
+Z:\Trabajo de Ebury-Segunda Iteracion\ebury-client-app\ebury-client\ebury-client\bin\Debug\ebury-client.application
+Z:\Trabajo de Ebury-Segunda Iteracion\ebury-client-app\ebury-client\ebury-client\bin\Debug\ebury-client.exe
+Z:\Trabajo de Ebury-Segunda Iteracion\ebury-client-app\ebury-client\ebury-client\bin\Debug\ebury-client.pdb
+Z:\Trabajo de Ebury-Segunda Iteracion\ebury-client-app\ebury-client\ebury-client\bin\Debug\Newtonsoft.Json.dll
+Z:\Trabajo de Ebury-Segunda Iteracion\ebury-client-app\ebury-client\ebury-client\obj\Debug\ebury-client.csprojResolveAssemblyReference.cache
+Z:\Trabajo de Ebury-Segunda Iteracion\ebury-client-app\ebury-client\ebury-client\obj\Debug\ebury_client.EditUser.resources
+Z:\Trabajo de Ebury-Segunda Iteracion\ebury-client-app\ebury-client\ebury-client\obj\Debug\ebury_client.GermanyInfrom.resources
+Z:\Trabajo de Ebury-Segunda Iteracion\ebury-client-app\ebury-client\ebury-client\obj\Debug\ebury_client.Index.resources
+Z:\Trabajo de Ebury-Segunda Iteracion\ebury-client-app\ebury-client\ebury-client\obj\Debug\ebury_client.NetherlandsInform.resources
+Z:\Trabajo de Ebury-Segunda Iteracion\ebury-client-app\ebury-client\ebury-client\obj\Debug\ebury_client.Properties.Resources.resources
+Z:\Trabajo de Ebury-Segunda Iteracion\ebury-client-app\ebury-client\ebury-client\obj\Debug\ebury_client.Register.resources
+Z:\Trabajo de Ebury-Segunda Iteracion\ebury-client-app\ebury-client\ebury-client\obj\Debug\ebury-client.csproj.GenerateResource.Cache
+Z:\Trabajo de Ebury-Segunda Iteracion\ebury-client-app\ebury-client\ebury-client\obj\Debug\ebury-client.exe.manifest
+Z:\Trabajo de Ebury-Segunda Iteracion\ebury-client-app\ebury-client\ebury-client\obj\Debug\ebury-client.application
