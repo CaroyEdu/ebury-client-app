@@ -1,6 +1,8 @@
 # Ebury Client App
 
-Descargar y instalar:
+Aplicación de escritorio web, hecha en Visual Studio usando C# para la compañía Ebury.
+
+# Instalación
 
 6.8.2 rc - https://downloads.mysql.com/archives/c-net/
 
